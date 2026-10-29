@@ -1,0 +1,32 @@
+|Block5
+q <= Block4:inst4.Q
+K => inst1.IN0
+J => inst.IN1
+CLK => Block4:inst4.CLK
+Qn <= Block4:inst4.Qn
+
+
+|Block5|Block4:inst4
+Qn <= practica4:inst9.Q
+D => inst.IN0
+D => inst3.IN0
+CLK => inst4.IN0
+CLK => inst7.IN1
+CLK => inst8.IN0
+Q <= practica4:inst9.Q2
+
+
+|Block5|Block4:inst4|practica4:inst9
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+R => inst.IN0
+S => inst1.IN0
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block5|Block4:inst4|practica4:inst6
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+R => inst.IN0
+S => inst1.IN0
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
